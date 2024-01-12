@@ -1,6 +1,6 @@
 # Project Name
 
-A brief description of your project.
+A dumb dumper for the meetups_1k knowledge graph. It merges a specified number of .ttl files into one suitable to be fed to the influence prediction script.
 
 ## Table of Contents
 
@@ -11,16 +11,12 @@ A brief description of your project.
 
 ## Installation
 
-Instructions on how to install and set up your project.
+Clone this repository
 
 ## Usage
 
-Guidelines on how to use your project, including examples and screenshots if applicable.
+`dumber.py [-h] [--limit LIMIT] folder_path output_file`
 
-## Contributing
-
-Information on how others can contribute to your project, including guidelines and code of conduct.
-
-## License
-
-Specify the license under which your project is distributed.
+`limit` is the desired number of .ttl files to be considered
+`folder_path` points to the directory of the sample_1k_meetups_triples
+`output_file` is the desired output file

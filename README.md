@@ -15,7 +15,7 @@ Clone this repository
 
 ## Usage
 
-`dumber.py [-h] [--limit LIMIT] folder_path output_file`
+`python dumber.py [-h] [--limit LIMIT] folder_path output_file`
 
 `limit` is the desired number of .ttl files to be considered
 `folder_path` points to the directory of the sample_1k_meetups_triples

@@ -1,0 +1,54 @@
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix geo:    <https://www.w3.org/2003/01/geo/wgs84_pos> .
+@prefix meetup: <http://w3id.org/polifonia/pilot/meetups/> .
+@prefix mtp:    <http://w3id.org/polifonia/ontology/meetups-ontology#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://dbpedia.org/resource/Luther_Henderson>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Luther_Henderson> .
+
+<http://dbpedia.org/resource/George_Washington>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/George_Washington> .
+
+meetup:musicmaking  rdf:type  mtp:Purpose ;
+        rdfs:label  "Music making" .
+
+<http://dbpedia.org/resource/Gerald_Henderson_Jr.>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Gerald_Henderson_Jr.> .
+
+<http://dbpedia.org/resource/Washington,_D.C.>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Washington,_D.C.> .
+
+meetup:786b659d59499ea12d17348d71c39846
+        rdf:type             mtp:TimeExpression , mtp:TimeRange ;
+        mtp:hasEvidenceText  "1944 to 1946" ;
+        time:hasBeginning    "1944-01-01"^^xsd:date ;
+        time:hasEnd          "1946-12-31"^^xsd:date .
+
+<http://dbpedia.org/resource/Naval_Station_Great_Lakes>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Naval_Station_Great_Lakes> .
+
+<http://w3id.org/polifonia/pilot/meetups/1359293/2/2>
+        rdf:type             mtp:Meetup ;
+        mtp:happensAt        meetup:786b659d59499ea12d17348d71c39846 ;
+        mtp:hasAPurpose      meetup:musicmaking ;
+        mtp:hasConfidence    "0.59900165" ;
+        mtp:hasEvidenceText  "Drafted into the Navy during World War II, Henderson became an arranger for the Navy band stationed at the Naval Station Great Lakes, prior to becoming the staff orchestrator for The U. S. Navy School of Music in Washington, D.C. from 1944 to 1946." ;
+        mtp:hasParticipant   <http://dbpedia.org/resource/Gerald_Henderson_Jr.> , <http://dbpedia.org/resource/George_Washington> ;
+        mtp:hasPlace         <http://dbpedia.org/resource/Washington,_D.C.> , <http://dbpedia.org/resource/Naval_Station_Great_Lakes> ;
+        mtp:hasSubject       <http://dbpedia.org/resource/Luther_Henderson> .

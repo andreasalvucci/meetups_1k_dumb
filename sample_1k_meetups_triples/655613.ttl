@@ -1,0 +1,160 @@
+@prefix core:   <https://w3id.org/polifonia/ontology/core/> .
+@prefix fx:     <http://sparql.xyz/facade-x/ns/> .
+@prefix geo:    <https://www.w3.org/2003/01/geo/wgs84_pos> .
+@prefix meetup: <http://w3id.org/polifonia/pilot/meetups/> .
+@prefix mtp:    <http://w3id.org/polifonia/ontology/meetups-ontology#> .
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix time:   <http://www.w3.org/2006/time#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix xyz:    <http://sparql.xyz/facade-x/data/> .
+
+<http://dbpedia.org/resource/Ted_Taylor_(physicist)>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Ted_Taylor_(physicist)> .
+
+<http://w3id.org/polifonia/pilot/meetups/655613/32/1>
+        rdf:type             mtp:Meetup ;
+        mtp:happensAt        meetup:22c9fcf1cc0ebe5776879167be589d82 , meetup:dd00f05df01319dd2768e8101966d569 ;
+        mtp:hasAPurpose      meetup:coincidence ;
+        mtp:hasConfidence    "0.9999995" ;
+        mtp:hasEvidenceText  "In September 2015, King was arrested as part of Operation Ravine, a further investigation into claims of sexual abuse at the Walton Hop disco in the 1970s." ;
+        mtp:hasParticipant   <http://dbpedia.org/resource/Operation_Yewtree> , <http://dbpedia.org/resource/Sexual_abuse> ;
+        mtp:hasPlace         <http://dbpedia.org/resource/Walton-on-Thames> ;
+        mtp:hasSubject       <http://dbpedia.org/resource/Jonathan_King> .
+
+<http://w3id.org/polifonia/pilot/meetups/655613/8/1>
+        rdf:type             mtp:Meetup ;
+        mtp:happensAt        meetup:0a6189aae0fe75da24ceb543a95c6d53 ;
+        mtp:hasAPurpose      meetup:education ;
+        mtp:hasConfidence    "0.8702818" ;
+        mtp:hasEvidenceText  "With his wages from a job stacking shelves in a supermarket, he made a demo of himself the following year singing \"It Doesn't Matter Anymore\" and \"Fool's Paradise\" Eden Kane song with the Ted Taylor Trio, a professional group in Rickmansworth." ;
+        mtp:hasParticipant   <http://dbpedia.org/resource/Ted_Taylor_(physicist)> , <http://dbpedia.org/resource/Eden_Kane> ;
+        mtp:hasPlace         <http://dbpedia.org/resource/Supermarket> , <http://dbpedia.org/resource/Rickmansworth> ;
+        mtp:hasSubject       <http://dbpedia.org/resource/Jonathan_King> .
+
+<http://dbpedia.org/resource/Burt_Bacharach>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Burt_Bacharach> .
+
+<http://dbpedia.org/resource/Jonathan_King>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Jonathan_King> .
+
+meetup:dd00f05df01319dd2768e8101966d569
+        rdf:type             mtp:TimeExpression , mtp:TimeReference ;
+        mtp:hasEvidenceText  "September 2015" ;
+        time:hasBeginning    "2015-09-01"^^xsd:date ;
+        time:hasEnd          "2015-09-30"^^xsd:date .
+
+<http://dbpedia.org/resource/London>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/London> .
+
+<http://w3id.org/polifonia/pilot/meetups/655613/38/0>
+        rdf:type             mtp:Meetup ;
+        mtp:happensAt        meetup:fb87582825f9d28a8d42c5e5e5e8b23d ;
+        mtp:hasAPurpose      meetup:personallife ;
+        mtp:hasConfidence    "0.94676846" ;
+        mtp:hasEvidenceText  "(1982) Bible Two: A Novel According to Jonathan King, London: W. H. Allen/Virgin Books." ;
+        mtp:hasParticipant   <http://dbpedia.org/resource/Steve_Allen> , <http://dbpedia.org/resource/Jonathan_King> ;
+        mtp:hasPlace         <http://dbpedia.org/resource/London> ;
+        mtp:hasSubject       <http://dbpedia.org/resource/Jonathan_King> .
+
+<http://dbpedia.org/resource/Eden_Kane>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Eden_Kane> .
+
+meetup:22c9fcf1cc0ebe5776879167be589d82
+        rdf:type             mtp:TimeExpression , mtp:TimeReference ;
+        mtp:hasEvidenceText  "the 1970s" ;
+        time:hasBeginning    "1970-01-01"^^xsd:date ;
+        time:hasEnd          "1979-12-31"^^xsd:date .
+
+meetup:personallife  rdf:type  mtp:Purpose ;
+        rdfs:label  "Personal life" .
+
+meetup:95884b5232ea01d055768613fc84f242
+        rdf:type             mtp:TimeExpression , mtp:TimeReference ;
+        mtp:hasEvidenceText  "Summer" .
+
+<http://dbpedia.org/resource/Walton-on-Thames>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Walton-on-Thames> .
+
+meetup:203d089ee503d28f41eeb81912026707
+        rdf:type             mtp:TimeExpression , mtp:TimeReference ;
+        mtp:hasEvidenceText  "October 1966" ;
+        time:hasBeginning    "1966-10-01"^^xsd:date ;
+        time:hasEnd          "1966-10-31"^^xsd:date .
+
+meetup:fb87582825f9d28a8d42c5e5e5e8b23d
+        rdf:type             mtp:TimeExpression , mtp:TimeReference ;
+        mtp:hasEvidenceText  "1982" ;
+        time:hasBeginning    "1982-01-01"^^xsd:date ;
+        time:hasEnd          "1982-12-31"^^xsd:date .
+
+<http://dbpedia.org/resource/Steve_Allen>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Steve_Allen> .
+
+<http://dbpedia.org/resource/Sexual_abuse>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Sexual_abuse> .
+
+meetup:coincidence  rdf:type  mtp:Purpose ;
+        rdfs:label  "Coincidence" .
+
+meetup:0a6189aae0fe75da24ceb543a95c6d53
+        rdf:type             mtp:TimeExpression , mtp:TimeReference ;
+        mtp:hasEvidenceText  "the following year" .
+
+meetup:education  rdf:type  mtp:Purpose ;
+        rdfs:label  "Education" .
+
+<http://dbpedia.org/resource/Supermarket>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Supermarket> .
+
+<http://dbpedia.org/resource/Rickmansworth>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Rickmansworth> .
+
+meetup:businessmeeting
+        rdf:type    mtp:Purpose ;
+        rdfs:label  "Business meeting" .
+
+<http://dbpedia.org/resource/Operation_Yewtree>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Operation_Yewtree> .
+
+<http://dbpedia.org/resource/Moon>
+        rdf:type              mtp:Location ;
+        rdfs:seeAlso          core:Place ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Moon> .
+
+<http://dbpedia.org/resource/Marlene_Dietrich>
+        rdf:type              mtp:Participant ;
+        rdfs:seeAlso          core:Person ;
+        mtp:hasDBPediaEntity  <http://dbpedia.org/resource/Marlene_Dietrich> .
+
+<http://w3id.org/polifonia/pilot/meetups/655613/11/17>
+        rdf:type             mtp:Meetup ;
+        mtp:happensAt        meetup:95884b5232ea01d055768613fc84f242 , meetup:203d089ee503d28f41eeb81912026707 ;
+        mtp:hasAPurpose      meetup:businessmeeting ;
+        mtp:hasConfidence    "0.98202354" ;
+        mtp:hasEvidenceText  "Dietrich sang \"Everyone's Gone to the Moon\" and its B side, \"Summer's Coming\", at the Golders Green Hippodrome in October 1966, with an arrangement by Burt Bacharach." ;
+        mtp:hasParticipant   <http://dbpedia.org/resource/Marlene_Dietrich> , <http://dbpedia.org/resource/Burt_Bacharach> ;
+        mtp:hasPlace         <http://dbpedia.org/resource/Moon> ;
+        mtp:hasSubject       <http://dbpedia.org/resource/Jonathan_King> .
